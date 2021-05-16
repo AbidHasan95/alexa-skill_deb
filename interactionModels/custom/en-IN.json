@@ -1,0 +1,456 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "get group twelve",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "CaptureZodiacSignIntent",
+          "slots": [
+            {
+              "name": "month",
+              "type": "AMAZON.Month"
+            },
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal"
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "find out what my zodiac sign is",
+            "do you know what my zodiac sign is",
+            "zodiac sign",
+            "want to know my zodiac sign",
+            "what is my zodiac sign",
+            "can you give my zodiac sign",
+            "can you tell my zodiac sign",
+            "what about my zodiac sign",
+            "can you tell me what my zodiac sign is",
+            "what is your take on my zodiac sign",
+            "say my zodiac sign",
+            "tell my zodiac sign once more",
+            "please repeat my zodiac sign",
+            "please state my zodiac sign once more",
+            "{day} {month} {year} what is my zodiac sign",
+            "{day} {month} {year} tell my zodiac sign",
+            "{month} {day} {year} ",
+            "{month} {day} {year} tell my zodiac sign",
+            "{month} {day} {year} what is my zodiac sign",
+            "born on {month} {day} {year} ",
+            "born on {month} {day} {year} what is my zodiac sign",
+            "born on {month} {day} {year} tell my zodiac sign",
+            "my birthday is on {month} {day} {year} ",
+            "my birthday is on {month} {day} tell my zodiac sign",
+            "my birthday is on {month} {day} {year} what is my zodiac sign",
+            "I was born on {month} {day} {year} tell my zodiac sign",
+            "I was born on {month} {day} {year} what is my zodiac sign",
+            "I was born on {month} {day} {year}",
+            "I was born on {month} {day} nineteen eighty three",
+            "I was born on {month} seventh nineteen eighty three",
+            "I was born on November seventh nineteen eighty three",
+            "i was born on {day} {month} {year} what is my zodiac sign",
+            "tell zodiac sign for my birthday",
+            "for my birthday please tell me my zodiac sign",
+            "tell me my birthday zodiac sign",
+            "tell me my zodiac sign for my birthday",
+            "let me know my zodiac sign",
+            "please tell me what my zodiac sign is based on my birthday",
+            "could you please tell me what my zodiac sign is",
+            "whats the zodiac sign",
+            "i was born on {day} {month} {year}",
+            "i was born on {year} {month} {day}",
+            "i was born on {day} {month}",
+            "i was born on {month} {day}",
+            "i was born on {month} {year}",
+            "in {month} of {year} i was born",
+            "i was born in {month}",
+            "i was born on {year}",
+            "i was born on {day}",
+            "my birth day is on {day} {month} {year}",
+            "my birthday is on {day} {month} {year}",
+            "my birthday is {month} {day} {year}",
+            "{month}",
+            "{day}",
+            "{year}",
+            "{day} {month}",
+            "{month} {day}",
+            "{month} {year}",
+            "{year} {month}",
+            "{year} {month} {day}",
+            "{day} {month} {year}"
+          ]
+        },
+        {
+          "name": "RecomendStoreIntent",
+          "slots": [
+            {
+              "name": "product",
+              "type": "Store_Product"
+            },
+            {
+              "name": "city",
+              "type": "Store_City"
+            },
+            {
+              "name": "maxPrice",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "  {city}  ",
+            "  {city} {product} ",
+            "  {city} {product} {maxPrice}",
+            "{product} ",
+            "{product}  {city}  ",
+            "{product}  {city}  {maxPrice}",
+            "I want to buy laptop in kolkata below nine hundred fifty",
+            "I want to buy laptop in kolkata below {maxPrice}",
+            "I want to buy laptop in {city} below {maxPrice}",
+            "recomend store in gurgaon for table below two hundred",
+            "recomend store in gurgaon for table below {maxPrice}",
+            "recomend store in gurgaon for {product} below {maxPrice}",
+            "I want to buy  in new delhi a camera  below five dundred twenty five",
+            "I want to buy  in new delhi a camera  below {maxPrice}",
+            "I want to buy  in new delhi  a {product}  below {maxPrice}",
+            "I want to buy  in {city} ",
+            "I want to buy  in {city} a {product}  ",
+            "I want to buy  in {city} a {product}  below {maxPrice}",
+            "want to purchase  in {city} ",
+            "want to purchase  in {city} a {product} ",
+            "want to purchase  in {city} a {product} below {maxPrice}",
+            "want to purchase {product} ",
+            "want to purchase {product} in {city} ",
+            "want to purchase {product} in {city} below {maxPrice}",
+            "recomend store in {city} ",
+            "recomend store in {city} for {product} ",
+            "recomend store in {city} for {product} below {maxPrice}",
+            "get store  in {city} ",
+            "get store  in {city} for {product}  ",
+            "get store  in {city} for {product}  below {maxPrice}",
+            "which stores  in {city} ",
+            "which stores  in {city} sell {product} ",
+            "which stores  in {city} sell {product} below {maxPrice}",
+            "which stores sell {product} ",
+            "which stores sell {product} in {city} ",
+            "which stores sell {product} in {city} below {maxPrice}",
+            "tell store names",
+            "get a store",
+            "get store",
+            "find a store",
+            "find store",
+            "get store for {product} ",
+            "get store for {product} in {city} ",
+            "get store for {product} in {city} below {maxPrice}",
+            "find store for {product} ",
+            "find store for {product} in {city}",
+            "find store for {product} in {city} below {maxPrice}",
+            "store recomendation",
+            "recomend store for {product}",
+            "recomend store for {product} in {city} ",
+            "recomend store for {product} in {city} below {maxPrice}",
+            "recomend store",
+            "recomend a store",
+            "I want to purchase {product} ",
+            "I want to purchase {product} in {city} ",
+            "I want to purchase {product} in {city} below {maxPrice}",
+            "Can you recomend a store for {product}",
+            "Can you recomend a store for {product} in {city}",
+            "Can you recomend a store for {product} in {city} below {maxPrice}",
+            "I want to buy {product} in {city} below {maxPrice}",
+            "I want to buy {product} in {city}",
+            "I want to buy {product}",
+            "Can you recomend a store",
+            "I want to buy",
+            "I want to purchase"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Vodka"
+              }
+            },
+            {
+              "name": {
+                "value": "Jacket"
+              }
+            },
+            {
+              "name": {
+                "value": "Cap"
+              }
+            },
+            {
+              "name": {
+                "value": "Laptop"
+              }
+            },
+            {
+              "name": {
+                "value": "Camera"
+              }
+            }
+          ],
+          "name": "Store_Product"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "meerut"
+              }
+            },
+            {
+              "name": {
+                "value": "jabalpur"
+              }
+            },
+            {
+              "name": {
+                "value": "jodhpur"
+              }
+            },
+            {
+              "name": {
+                "value": "allahabad"
+              }
+            },
+            {
+              "name": {
+                "value": "varanasi"
+              }
+            },
+            {
+              "name": {
+                "value": "patna"
+              }
+            },
+            {
+              "name": {
+                "value": "lucknow"
+              }
+            },
+            {
+              "name": {
+                "value": "jaipur"
+              }
+            },
+            {
+              "name": {
+                "value": "new delhi"
+              }
+            },
+            {
+              "name": {
+                "value": "Delhi"
+              }
+            }
+          ],
+          "name": "Store_City"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CaptureZodiacSignIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "month",
+              "type": "AMAZON.Month",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1172836976778.377978026939"
+              }
+            },
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1172836976778.114075647258"
+              }
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1172836976778.293727094559"
+              },
+              "validations": [
+                {
+                  "type": "isLessThanOrEqualTo",
+                  "prompt": "Slot.Validation.1234305564757.289812295194.874029762947",
+                  "value": "2021"
+                },
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.53417455784.427528733784.818022816889",
+                  "value": "1900"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RecomendStoreIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "product",
+              "type": "Store_Product",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1359546937629.832665531966"
+              }
+            },
+            {
+              "name": "city",
+              "type": "Store_City",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1359546937629.1362565271615"
+              }
+            },
+            {
+              "name": "maxPrice",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1359546937629.1122239923894"
+              },
+              "validations": [
+                {
+                  "type": "isLessThanOrEqualTo",
+                  "prompt": "Slot.Validation.935868785856.1614048133067.84127188730",
+                  "value": "1000"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1172836976778.377978026939",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What month were you born"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1172836976778.114075647258",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What day were you born"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1172836976778.293727094559",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What year were you born"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1359546937629.832665531966",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What product do you want to buy?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1359546937629.1362565271615",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which city you want to buy from?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1359546937629.1122239923894",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is the maximum price in rupees, below which you want this product?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.935868785856.1614048133067.84127188730",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I know only stores with cheap products price less than thousand rupees. What is the maximum price in rupees, below which you want this product?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1234305564757.289812295194.874029762947",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "It seems you are yet to be born. Please get back to me for the zodiac sign when you are born."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.53417455784.427528733784.818022816889",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Your age is more than hundred twenty years. Are you sure you are still alive?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "22"
+}
